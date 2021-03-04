@@ -4,7 +4,7 @@
 polinomiale scritto in linguaggio C con alcune ottimizzazioni in codice assembly. Sono implementati
 due diversi algoritmi di regressione:  </p1>
 <li>
-Variante SGD che usa il meccanicmo della discesa stocastica del gradiente esaminando un batch di k campioni
+Variante SGD che usa il meccanismo della discesa stocastica del gradiente esaminando un batch di k campioni
 </li>
 <li>
 La variante ADAGRAD che usa l'algotimo adagrad come accelleratore

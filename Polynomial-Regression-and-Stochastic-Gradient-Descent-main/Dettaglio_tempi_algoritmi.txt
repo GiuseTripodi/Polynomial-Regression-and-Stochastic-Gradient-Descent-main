@@ -1,0 +1,169 @@
+Dettaglio tempi algoritmi architetture
+
+
+
+Test 1.
+
+Data: 17/01/2020
+
+Descrizione: Test post scrittura algoritmo totalmente in C.
+
+
+	Dataset: test_2000x4
+		Grado: 4
+			Batch: 30
+				32 SGD
+					32;30;4;0.001;3000;SGD;2459;0.003;2.451;0;2;1.069638
+				32 ADAGRAD
+					32;30;4;3;3000;ADA;17636;0.003;17.627;0;2;0.790545
+				64 SGD
+					64;30;4;0.001;3000;SGD;2352;0.003;2.344;0;2;1.069638
+				64 ADAGRAD
+					64;30;4;3;3000;ADA;14345;0.003;14.334;0;2;0.790544
+				32 SGD OPENMP
+					32omp;30;4;0.001;3000;SGD;2;-1;-1;0;2;-1.000000
+				32 ADAGRAD OPENMP
+					32omp;30;4;3;3000;ADA;2;-1;-1;0;2;-1.000000
+				64 SGD OPENMP
+					64omp;30;4;0.001;3000;SGD;1;-1;-1;0;2;-1.000000
+				64 ADAGRAD OPENMP
+					64omp;30;4;3;3000;ADA;2;-1;-1;0;2;-1.000000
+
+	Dataset: test_2000x4
+		Grado: 4
+			Batch: 30
+				32 SGD
+Input data name: '../../datasets/test_2000x4_4f.data'
+Input label name: '../../datasets/test_2000x4_4f.labels'
+Data set size [n]: 2000
+Number of dimensions [d]: 4
+Batch dimension: 30
+Degree: 4
+Eta: 0.001000
+Adagrad disabled
+Conversion time = 0.006 secs
+Regression time = 2.652 secs
+
+Done.
+Total time = 2666
+MSE: 1.069638
+					
+				32 ADAGRAD
+Input data name: '../../datasets/test_2000x4_4f.data'
+Input label name: '../../datasets/test_2000x4_4f.labels'
+Data set size [n]: 2000
+Number of dimensions [d]: 4
+Batch dimension: 30
+Degree: 4
+Eta: 3.000000
+Adagrad enabled
+Conversion time = 0.003 secs
+Regression time = 18.028 secs
+
+Done.
+Total time = 18118
+MSE: 0.790545
+					
+				64 SGD
+Input data name: '../../datasets/test_2000x4_4d.data'
+Input label name: '../../datasets/test_2000x4_4d.labels'
+Data set size [n]: 2000
+Number of dimensions [d]: 4
+Batch dimension: 30
+Degree: 4
+Eta: 0.001000
+Adagrad disabled
+Conversion time = 0.004 secs
+Regression time = 2.464 secs
+
+Done.
+Total time = 2506
+MSE: 1.069638
+					
+				64 ADAGRAD
+Input data name: '../../datasets/test_2000x4_4d.data'
+Input label name: '../../datasets/test_2000x4_4d.labels'
+Data set size [n]: 2000
+Number of dimensions [d]: 4
+Batch dimension: 30
+Degree: 4
+Eta: 3.000000
+Adagrad enabled
+Conversion time = 0.003 secs
+Regression time = 14.649 secs
+
+Done.
+Total time = 14658
+MSE: 0.790544
+
+
+Test, dopo merge complessivo di tutti i metodi
+
+Gruppo: progetti/gruppo15
+        Dataset: test_2000x4
+                Grado: 4
+                        Batch: 30
+                                32 SGD
+Input data name: '../../datasets/test_2000x4_4f.data'
+Input label name: '../../datasets/test_2000x4_4f.labels'
+Data set size [n]: 2000
+Number of dimensions [d]: 4
+Batch dimension: 30
+Degree: 4
+Eta: 0.001000
+Adagrad disabled
+Conversion time = 0.000752 secs
+Regression time = 1.093075 secs
+
+Done.
+Total time = 1099
+MSE: 1.069609
+
+                                32 ADAGRAD
+Input data name: '../../datasets/test_2000x4_4f.data'
+Input label name: '../../datasets/test_2000x4_4f.labels'
+Data set size [n]: 2000
+Number of dimensions [d]: 4
+Batch dimension: 30
+Degree: 4
+Eta: 3.000000
+Adagrad enabled
+Conversion time = 0.000614 secs
+Regression time = 1.231962 secs
+
+Done.
+Total time = 1237
+MSE: 0.791920
+
+                                64 SGD
+Input data name: '../../datasets/test_2000x4_4d.data'
+Input label name: '../../datasets/test_2000x4_4d.labels'
+Data set size [n]: 2000
+Number of dimensions [d]: 4
+Batch dimension: 30
+Degree: 4
+Eta: 0.001000
+Adagrad disabled
+Conversion time = 0.000926 secs
+Regression time = 0.484732 secs
+
+Done.
+Total time = 495
+MSE: 1.069609
+
+                                64 ADAGRAD
+Input data name: '../../datasets/test_2000x4_4d.data'
+Input label name: '../../datasets/test_2000x4_4d.labels'
+Data set size [n]: 2000
+Number of dimensions [d]: 4
+Batch dimension: 30
+Degree: 4
+Eta: 3.000000
+Adagrad enabled
+Conversion time = 0.001549 secs
+Regression time = 1.082251 secs
+
+Done.
+Total time = 1098
+MSE: 0.791920
+
